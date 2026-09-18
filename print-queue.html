@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Очередь печати — Pastila Wiki</title>
+  <link rel="stylesheet" href="../themes/Gray/light.css">
+  <link rel="stylesheet" href="css/wiki.css">
+</head>
+<body>
+<div class="wiki-layout">
+  <aside class="wiki-sidebar">
+    <div class="wiki-brand"><h1>Pastila</h1><p>Руководство пользователя</p></div>
+    <nav><ul class="wiki-nav">
+      <li class="wiki-nav-section">Начало</li>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="about.html">О программе</a></li>
+      <li><a href="getting-started.html">С чего начать</a></li>
+      <li class="wiki-nav-section">Работа</li>
+      <li><a href="interface.html">Интерфейс</a></li>
+      <li><a href="files.html">Файлы и папки</a></li>
+      <li><a href="hotkeys.html">Горячие клавиши</a></li>
+      <li><a href="search.html">Поиск</a></li>
+      <li><a href="materials.html">Материалы</a></li>
+      <li><a href="tags.html">Теги</a></li>
+      <li><a href="previews.html">Превью моделей</a></li>
+      <li><a href="print-queue.html" class="active">Очередь печати</a></li>
+      <li class="wiki-nav-section">Система</li>
+      <li><a href="settings.html">Настройки и резервные копии</a></li>
+    </ul></nav>
+  </aside>
+  <main class="wiki-main">
+    <h1>Очередь печати</h1>
+    <p class="wiki-lead">Планируйте печать без перемещения файлов — только ссылки и статусы.</p>
+
+    <figure class="wiki-figure">
+      <img src="images/print-queue.svg" alt="Схема очереди печати">
+      <figcaption>Папки в очереди и ссылки на файлы</figcaption>
+    </figure>
+
+    <h2>Как это работает</h2>
+    <p>В дереве есть системный раздел <strong>Очередь печати</strong>. Внутри — виртуальные папки (например, «Срочно», «На выходных»). В них добавляются <strong>ссылки</strong> на файлы из библиотеки — оригиналы остаются на месте.</p>
+
+    <h2>Добавление в очередь</h2>
+    <ul>
+      <li>Контекстное меню файла → <strong>Добавить в очередь печати</strong> → выбор папки.</li>
+      <li>Перетаскивание карточки файла на папку очереди в дереве.</li>
+      <li>Массовое добавление выделенных файлов.</li>
+    </ul>
+    <p>Дубликат в той же папке очереди — с подтверждением.</p>
+
+    <h2>Статусы ссылки</h2>
+    <div class="wiki-table-wrap">
+      <table class="wiki-table">
+        <tr><th>Статус</th><th>Клавиша</th><th>Значение</th></tr>
+        <tr><td>В очереди</td><td><kbd>1</kbd></td><td>Ждёт печати</td></tr>
+        <tr><td>Печатается</td><td><kbd>2</kbd></td><td>Сейчас на принтере</td></tr>
+        <tr><td>Напечатано</td><td><kbd>3</kbd></td><td>Готово; исходный файл помечается «напечатано»</td></tr>
+      </table>
+    </div>
+    <p>Статус меняется в контекстном меню ссылки или горячими клавишами при выделении.</p>
+
+    <h2>Порядок печати</h2>
+    <p>Порядок = порядок элементов в папке. Перетаскивайте ссылки в дереве или на панели карточек.</p>
+
+    <h2>Заметки</h2>
+    <p>У каждой ссылки можно добавить текстовую заметку (настройки стола, цвет, комментарий) через контекстное меню.</p>
+
+    <h2>Битые ссылки</h2>
+    <p>Если исходный файл удалён, ссылка помечается как битая. Такие можно очистить массово из меню папки очереди.</p>
+
+    <h2>Стартовая страница</h2>
+    <p>Блок <strong>Продолжить печать</strong> показывает активные ссылки (в очереди / печатается) — клик открывает нужную папку.</p>
+
+    <h2>Просроченные элементы</h2>
+    <p>Элементы не в статусе «Напечатано», которые слишком долго остаются в очереди, помечаются бейджем <strong>Просрочено</strong>. Срок настраивается в <a href="settings.html">настройках</a> (раздел «Обслуживание»).</p>
+
+    <h2>Экспорт</h2>
+    <p>В панели очереди — кнопки <strong>Экспорт списка</strong> (текст) и <strong>Экспорт HTML</strong> (таблица для печати или просмотра в браузере).</p>
+  </main>
+</div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Теги — Pastila Wiki</title>
+  <link rel="stylesheet" href="../themes/Gray/light.css">
+  <link rel="stylesheet" href="css/wiki.css">
+</head>
+<body>
+<div class="wiki-layout">
+  <aside class="wiki-sidebar">
+    <div class="wiki-brand"><h1>Pastila</h1><p>Руководство пользователя</p></div>
+    <nav><ul class="wiki-nav">
+      <li class="wiki-nav-section">Начало</li>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="about.html">О программе</a></li>
+      <li><a href="getting-started.html">С чего начать</a></li>
+      <li class="wiki-nav-section">Работа</li>
+      <li><a href="interface.html">Интерфейс</a></li>
+      <li><a href="files.html">Файлы и папки</a></li>
+      <li><a href="hotkeys.html">Горячие клавиши</a></li>
+      <li><a href="search.html">Поиск</a></li>
+      <li><a href="materials.html">Материалы</a></li>
+      <li><a href="tags.html" class="active">Теги</a></li>
+      <li><a href="previews.html">Превью моделей</a></li>
+      <li><a href="print-queue.html">Очередь печати</a></li>
+      <li class="wiki-nav-section">Система</li>
+      <li><a href="settings.html">Настройки и резервные копии</a></li>
+    </ul></nav>
+  </aside>
+  <main class="wiki-main">
+    <h1>Теги</h1>
+    <p class="wiki-lead">Произвольные метки на файлах для поиска и группировки.</p>
+
+    <h2>Добавление тегов</h2>
+    <p>Выберите файл → правая панель → блок <strong>Теги</strong>:</p>
+    <ul>
+      <li>введите тег и нажмите Enter;</li>
+      <li>клик по чипу с крестиком удаляет тег с файла;</li>
+      <li>при вводе подсказываются уже существующие теги (выпадающий список под полем).</li>
+    </ul>
+
+    <h2>Автотеги при загрузке</h2>
+    <p>При добавлении файла с расширением <code>stl</code>, <code>obj</code>, <code>3mf</code> или <code>zip</code> Pastila автоматически ставит тег с именем расширения — удобно для фильтрации в панели. Тег можно удалить или дополнить вручную.
+
+    <h2>Массовое добавление</h2>
+    <p>Выделите несколько файлов в дереве или панели → контекстное меню → <strong>Добавить тег…</strong>. Можно ввести несколько тегов через запятую.</p>
+
+    <h2>Поиск и фильтры</h2>
+    <ul>
+      <li>Поиск в дереве (<kbd>Ctrl</kbd>+<kbd>F</kbd>) учитывает теги.</li>
+      <li>Глобальный поиск (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd>) тоже.</li>
+      <li>В панели файлов — фильтр по тегу и пункт <strong>Без тегов</strong>.</li>
+    </ul>
+    <p>Теги отображаются чипами на карточках файлов.</p>
+
+    <h2>Менеджер тегов</h2>
+    <p><strong>Настройки → Разное → Управление тегами</strong></p>
+    <p>Таблица всех тегов с количеством файлов. Для каждого тега:</p>
+    <div class="wiki-table-wrap">
+      <table class="wiki-table">
+        <tr><th>Действие</th><th>Что делает</th></tr>
+        <tr><td>Переименовать</td><td>Меняет имя тега на всех файлах</td></tr>
+        <tr><td>Объединить</td><td>Заменяет этот тег на другой: файлы с тегом A получают тег B, A исчезает</td></tr>
+        <tr><td>Удалить</td><td>Снимает тег со всех файлов</td></tr>
+      </table>
+    </div>
+    <div class="wiki-card">
+      <h3>Пример объединения</h3>
+      <p>Есть теги <em>запчасть</em> и <em>деталь</em>. Объединяем «запчасть» → «деталь»: у всех файлов с «запчасть» этот тег убирается, добавляется «деталь» (если его ещё не было).</p>
+    </div>
+  </main>
+</div>
+</body>
+</html>

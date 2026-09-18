@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Поиск — Pastila Wiki</title>
+  <link rel="stylesheet" href="../themes/Gray/light.css">
+  <link rel="stylesheet" href="css/wiki.css">
+</head>
+<body>
+<div class="wiki-layout">
+  <aside class="wiki-sidebar">
+    <div class="wiki-brand"><h1>Pastila</h1><p>Руководство пользователя</p></div>
+    <nav><ul class="wiki-nav">
+      <li class="wiki-nav-section">Начало</li>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="about.html">О программе</a></li>
+      <li><a href="getting-started.html">С чего начать</a></li>
+      <li class="wiki-nav-section">Работа</li>
+      <li><a href="interface.html">Интерфейс</a></li>
+      <li><a href="files.html">Файлы и папки</a></li>
+      <li><a href="hotkeys.html">Горячие клавиши</a></li>
+      <li><a href="search.html" class="active">Поиск</a></li>
+      <li><a href="materials.html">Материалы</a></li>
+      <li><a href="tags.html">Теги</a></li>
+      <li><a href="previews.html">Превью моделей</a></li>
+      <li><a href="print-queue.html">Очередь печати</a></li>
+      <li class="wiki-nav-section">Система</li>
+      <li><a href="settings.html">Настройки и резервные копии</a></li>
+    </ul></nav>
+  </aside>
+  <main class="wiki-main">
+    <h1>Поиск</h1>
+    <p class="wiki-lead">Два режима: быстрый поиск в дереве и полный поиск по хранилищу.</p>
+
+    <h2>Поиск в дереве — <kbd>Ctrl</kbd>+<kbd>F</kbd></h2>
+    <p>Ищет по <strong>имени узла</strong> и <strong>тегам файлов</strong> в видимой структуре дерева.</p>
+    <ul>
+      <li>Совпадения подсвечиваются в дереве.</li>
+      <li>Счётчик показывает текущее совпадение из общего числа (например, 2 / 7).</li>
+      <li>Стрелки <kbd>↑</kbd> и <kbd>↓</kbd> переключают между совпадениями.</li>
+      <li>Ветки с результатами автоматически раскрываются.</li>
+      <li><kbd>Esc</kbd> закрывает строку поиска.</li>
+    </ul>
+
+    <h2>Глобальный поиск — <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd></h2>
+    <p>Ищет по всему хранилищу:</p>
+    <ul>
+      <li>имя файла;</li>
+      <li>теги;</li>
+      <li>название материала и цвета.</li>
+    </ul>
+    <p>Открывается оверлей по центру экрана. Клик по результату открывает панель с этим файлом. До 80 результатов за запрос.</p>
+
+    <h2>Фильтры в панели файлов</h2>
+    <p>Над карточками в центральной панели — выпадающие списки:</p>
+    <ul>
+      <li>материал;</li>
+      <li>цвет;</li>
+      <li>тег (включая «Без тегов»).</li>
+    </ul>
+    <p>Фильтры действуют только на текущую открытую панель, не на всё дерево.</p>
+
+    <h2>Фильтры дерева</h2>
+    <p>Кнопки <strong>Избранное</strong> и <strong>Напечатано</strong> в верхнем тулбаре скрывают узлы, не подходящие под условие.</p>
+  </main>
+</div>
+</body>
+</html>

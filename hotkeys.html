@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Горячие клавиши — Pastila Wiki</title>
+  <link rel="stylesheet" href="../themes/Gray/light.css">
+  <link rel="stylesheet" href="css/wiki.css">
+</head>
+<body>
+<div class="wiki-layout">
+  <aside class="wiki-sidebar">
+    <div class="wiki-brand"><h1>Pastila</h1><p>Руководство пользователя</p></div>
+    <nav><ul class="wiki-nav">
+      <li class="wiki-nav-section">Начало</li>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="about.html">О программе</a></li>
+      <li><a href="getting-started.html">С чего начать</a></li>
+      <li class="wiki-nav-section">Работа</li>
+      <li><a href="interface.html">Интерфейс</a></li>
+      <li><a href="files.html">Файлы и папки</a></li>
+      <li><a href="hotkeys.html" class="active">Горячие клавиши</a></li>
+      <li><a href="search.html">Поиск</a></li>
+      <li><a href="materials.html">Материалы</a></li>
+      <li><a href="tags.html">Теги</a></li>
+      <li><a href="previews.html">Превью моделей</a></li>
+      <li><a href="print-queue.html">Очередь печати</a></li>
+      <li class="wiki-nav-section">Система</li>
+      <li><a href="settings.html">Настройки и резервные копии</a></li>
+    </ul></nav>
+  </aside>
+  <main class="wiki-main">
+    <h1>Горячие клавиши</h1>
+    <p class="wiki-lead">Сочетания работают в главном окне, когда фокус не в поле ввода.</p>
+
+    <h2>Файлы и дерево</h2>
+    <ul class="hotkeys-list">
+      <li class="hotkey-item">
+        <div class="hotkey-keys"><kbd>Delete</kbd><kbd>Backspace</kbd></div>
+        <span class="hotkey-desc">Удалить выделенное (в корзину или из очереди печати)</span>
+      </li>
+      <li class="hotkey-item">
+        <div class="hotkey-keys"><kbd>F2</kbd></div>
+        <span class="hotkey-desc">Переименовать выделенный элемент</span>
+      </li>
+      <li class="hotkey-item">
+        <div class="hotkey-keys"><kbd>Enter</kbd></div>
+        <span class="hotkey-desc">Открыть панель или файл (в 3D-редакторе по умолчанию)</span>
+      </li>
+      <li class="hotkey-item">
+        <div class="hotkey-keys"><kbd>Ctrl</kbd><kbd>C</kbd></div>
+        <span class="hotkey-desc">Копировать путь выделенного файла (если нет выделенного текста)</span>
+      </li>
+      <li class="hotkey-item">
+        <div class="hotkey-keys"><kbd>Ctrl</kbd><kbd>Z</kbd></div>
+        <span class="hotkey-desc">Отменить последнее перемещение или переименование (до 10 действий)</span>
+      </li>
+    </ul>
+
+    <h2>Панель файлов</h2>
+    <ul class="hotkeys-list">
+      <li class="hotkey-item">
+        <div class="hotkey-keys"><kbd>↑</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd></div>
+        <span class="hotkey-desc">Перемещение фокуса по карточкам в активной панели</span>
+      </li>
+      <li class="hotkey-item">
+        <div class="hotkey-keys"><kbd>Shift</kbd> + стрелки</div>
+        <span class="hotkey-desc">Расширить выделение в панели</span>
+      </li>
+    </ul>
+
+    <h2>Поиск</h2>
+    <ul class="hotkeys-list">
+      <li class="hotkey-item">
+        <div class="hotkey-keys"><kbd>Ctrl</kbd><kbd>F</kbd></div>
+        <span class="hotkey-desc">Поиск в дереве — подсветка, счётчик, стрелки ↑↓ между совпадениями</span>
+      </li>
+      <li class="hotkey-item">
+        <div class="hotkey-keys"><kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>F</kbd></div>
+        <span class="hotkey-desc">Глобальный поиск по всему хранилищу (имя, теги, материал)</span>
+      </li>
+      <li class="hotkey-item">
+        <div class="hotkey-keys"><kbd>Esc</kbd></div>
+        <span class="hotkey-desc">Закрыть поиск в дереве или глобальный поиск</span>
+      </li>
+    </ul>
+
+    <h2>Очередь печати</h2>
+    <p>Работают, когда выделены ссылки (<code>file_ref</code>) внутри очереди печати:</p>
+    <ul class="hotkeys-list">
+      <li class="hotkey-item">
+        <div class="hotkey-keys"><kbd>1</kbd></div>
+        <span class="hotkey-desc">Статус: в очереди</span>
+      </li>
+      <li class="hotkey-item">
+        <div class="hotkey-keys"><kbd>2</kbd></div>
+        <span class="hotkey-desc">Статус: печатается</span>
+      </li>
+      <li class="hotkey-item">
+        <div class="hotkey-keys"><kbd>3</kbd></div>
+        <span class="hotkey-desc">Статус: напечатано (исходный файл помечается как напечатанный)</span>
+      </li>
+    </ul>
+
+    <div class="wiki-tip">На macOS вместо <kbd>Ctrl</kbd> используйте <kbd>⌘</kbd> (Cmd).</div>
+  </main>
+</div>
+</body>
+</html>

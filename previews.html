@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Превью моделей — Pastila Wiki</title>
+  <link rel="stylesheet" href="../themes/Gray/light.css">
+  <link rel="stylesheet" href="css/wiki.css">
+</head>
+<body>
+<div class="wiki-layout">
+  <aside class="wiki-sidebar">
+    <div class="wiki-brand"><h1>Pastila</h1><p>Руководство пользователя</p></div>
+    <nav><ul class="wiki-nav">
+      <li class="wiki-nav-section">Начало</li>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="about.html">О программе</a></li>
+      <li><a href="getting-started.html">С чего начать</a></li>
+      <li class="wiki-nav-section">Работа</li>
+      <li><a href="interface.html">Интерфейс</a></li>
+      <li><a href="files.html">Файлы и папки</a></li>
+      <li><a href="hotkeys.html">Горячие клавиши</a></li>
+      <li><a href="search.html">Поиск</a></li>
+      <li><a href="materials.html">Материалы</a></li>
+      <li><a href="tags.html">Теги</a></li>
+      <li><a href="previews.html" class="active">Превью моделей</a></li>
+      <li><a href="print-queue.html">Очередь печати</a></li>
+      <li class="wiki-nav-section">Система</li>
+      <li><a href="settings.html">Настройки и резервные копии</a></li>
+    </ul></nav>
+  </aside>
+  <main class="wiki-main">
+    <h1>Превью моделей</h1>
+    <p class="wiki-lead">Миниатюры на карточках файлов и в правой панели.</p>
+
+    <h2>Автоматическое создание</h2>
+    <p>При загрузке или переименовании файла Pastila пытается создать PNG-превью для:</p>
+    <ul>
+      <li>изображений (JPG, PNG…);</li>
+      <li>моделей STL, OBJ, 3MF.</li>
+    </ul>
+    <p>Файлы превью хранятся в папке <code>previews/</code> внутри хранилища.</p>
+
+    <h2>3D-превью в правой панели</h2>
+    <p>Для STL, OBJ и 3MF отображается интерактивный просмотр:</p>
+    <ul>
+      <li><strong>Вращение</strong> — перетаскивание левой кнопкой мыши по модели;</li>
+      <li><strong>Масштаб</strong> — колёсико мыши или кнопки ± на панели;</li>
+      <li><strong>Полный вид / каркас</strong> — кнопка с кубом после кнопки сетки переключает способ отображения модели;</li>
+      <li><strong>Куб ориентации</strong> — небольшой каркасный куб с цветными осями X, Y и Z в левом нижнем углу. Перетаскивайте его для свободного вращения камеры; короткий клик по невидимой грани включает стандартный вид.</li>
+    </ul>
+    <p>Кнопка <strong>Pin</strong> фиксирует ракурс — тогда автоматическая перегенерация превью для этого файла не выполняется.</p>
+
+    <h2>Пакетное создание</h2>
+    <p>Если у части файлов нет миниатюр (старый импорт, сбой):</p>
+    <ol>
+      <li>Откройте <strong>Настройки → Разное</strong>.</li>
+      <li>Нажмите <strong>Создать отсутствующие превью</strong>.</li>
+      <li>Дождитесь окончания — отображается прогресс.</li>
+    </ol>
+    <p>Обрабатываются только файлы без превью или с отсутствующим PNG на диске. Файлы с закреплённым (Pin) видом пропускаются.</p>
+
+    <h2>Размер карточек</h2>
+    <p>Размер превью на карточках настраивается в настройках (параметр размера превью / шрифта имён файлов).</p>
+  </main>
+</div>
+</body>
+</html>

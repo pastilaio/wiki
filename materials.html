@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Материалы — Pastila Wiki</title>
+  <link rel="stylesheet" href="../themes/Gray/light.css">
+  <link rel="stylesheet" href="css/wiki.css">
+</head>
+<body>
+<div class="wiki-layout">
+  <aside class="wiki-sidebar">
+    <div class="wiki-brand"><h1>Pastila</h1><p>Руководство пользователя</p></div>
+    <nav><ul class="wiki-nav">
+      <li class="wiki-nav-section">Начало</li>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="about.html">О программе</a></li>
+      <li><a href="getting-started.html">С чего начать</a></li>
+      <li class="wiki-nav-section">Работа</li>
+      <li><a href="interface.html">Интерфейс</a></li>
+      <li><a href="files.html">Файлы и папки</a></li>
+      <li><a href="hotkeys.html">Горячие клавиши</a></li>
+      <li><a href="search.html">Поиск</a></li>
+      <li><a href="materials.html" class="active">Материалы</a></li>
+      <li><a href="tags.html">Теги</a></li>
+      <li><a href="previews.html">Превью моделей</a></li>
+      <li><a href="print-queue.html">Очередь печати</a></li>
+      <li class="wiki-nav-section">Система</li>
+      <li><a href="settings.html">Настройки и резервные копии</a></li>
+    </ul></nav>
+  </aside>
+  <main class="wiki-main">
+    <h1>Материалы</h1>
+    <p class="wiki-lead">Справочник филаментов: тип, производитель, цвет — и привязка к каждой модели.</p>
+
+    <h2>Страница «Материалы»</h2>
+    <p>Откройте кнопкой в нижней панели дерева. Четыре таблицы:</p>
+    <ol>
+      <li><strong>Производители</strong> — бренды (Prusament, eSUN…).</li>
+      <li><strong>Типы</strong> — PLA, PETG, ABS…</li>
+      <li><strong>Цвета</strong> — название и образец цвета.</li>
+      <li><strong>Материалы</strong> — конкретная связка: имя + тип + производитель.</li>
+    </ol>
+    <p>Ячейки таблиц редактируются кликом. Есть поиск по всем спискам.</p>
+
+    <h2>Привязка к файлу</h2>
+    <p>Выберите файл — в правой панели «Детали файла»:</p>
+    <ul>
+      <li>выпадающий список <strong>Материал</strong>;</li>
+      <li>выпадающий список <strong>Цвет печати</strong> с цветным индикатором.</li>
+    </ul>
+    <p>На карточке файла в панели отображается бейдж с материалом.</p>
+
+    <h2>Фильтр в панели</h2>
+    <p>Над карточками можно отфильтровать файлы по материалу или цвету — удобно, когда ищете «всё чёрное PETG».</p>
+
+    <h2>Удаление материала</h2>
+    <p>При удалении записи из справочника программа предупредит, сколько файлов на неё ссылаются. Можно снять привязку со всех файлов перед удалением.</p>
+
+    <div class="wiki-tip">Данные хранятся в <code>materials.json</code> внутри папки проекта и попадают в резервную копию вместе с остальным хранилищем.</div>
+  </main>
+</div>
+</body>
+</html>

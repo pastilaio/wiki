@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>С чего начать — Pastila Wiki</title>
+  <link rel="stylesheet" href="../themes/Gray/light.css">
+  <link rel="stylesheet" href="css/wiki.css">
+</head>
+<body>
+<div class="wiki-layout">
+  <aside class="wiki-sidebar">
+    <div class="wiki-brand"><h1>Pastila</h1><p>Руководство пользователя</p></div>
+    <nav><ul class="wiki-nav">
+      <li class="wiki-nav-section">Начало</li>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="about.html">О программе</a></li>
+      <li><a href="getting-started.html" class="active">С чего начать</a></li>
+      <li class="wiki-nav-section">Работа</li>
+      <li><a href="interface.html">Интерфейс</a></li>
+      <li><a href="files.html">Файлы и папки</a></li>
+      <li><a href="hotkeys.html">Горячие клавиши</a></li>
+      <li><a href="search.html">Поиск</a></li>
+      <li><a href="materials.html">Материалы</a></li>
+      <li><a href="tags.html">Теги</a></li>
+      <li><a href="previews.html">Превью моделей</a></li>
+      <li><a href="print-queue.html">Очередь печати</a></li>
+      <li class="wiki-nav-section">Система</li>
+      <li><a href="settings.html">Настройки и резервные копии</a></li>
+    </ul></nav>
+  </aside>
+  <main class="wiki-main">
+    <h1>С чего начать</h1>
+    <p class="wiki-lead">Пошаговая настройка при первом запуске Pastila.</p>
+
+    <h2 id="install">Установка</h2>
+    <p>Скачайте установщик <strong>Pastila-Setup-1.0.0.exe</strong> и запустите его. Во время установки можно выбрать:</p>
+    <ol>
+      <li><strong>Язык установщика</strong> — русский или English (интерфейс мастера установки).</li>
+      <li><strong>Папку программы</strong> — по умолчанию <code>%AppData%\Pastila</code> (это <code>C:\Users\…\AppData\Roaming\Pastila</code>). Можно указать любой другой каталог.</li>
+      <li><strong>Язык программы</strong> — русский или English.</li>
+      <li><strong>Папку хранилища</strong> — где будут лежать модели и <code>structure.json</code>. По умолчанию <code>Документы\Pastila</code>.</li>
+    </ol>
+    <div class="wiki-tip">Настройки языка и путь к хранилищу можно позже изменить: <strong>Настройки → Язык</strong> и <strong>Настройки → Хранилище</strong>.</div>
+
+    <h2 id="step1">Шаг 1. Папка хранилища</h2>
+    <ol>
+      <li>Если хранилище не выбрали в установщике: откройте <strong>Настройки</strong> (иконка шестерёнки внизу слева).</li>
+      <li>В блоке «Хранилище» нажмите <strong>Изменить папку</strong> и укажите каталог на диске.</li>
+      <li>Программа создаст нужную структуру (<code>structure.json</code>, папки загрузок и корзины).</li>
+    </ol>
+    <div class="wiki-tip">Удобно выделить отдельную папку, например <code>D:\3D\Pastila</code>, и не смешивать её с системными загрузками.</div>
+
+    <h2 id="step2">Шаг 2. Стартовая страница</h2>
+    <p>При запуске можно показывать стартовую страницу с блоками:</p>
+    <ul>
+      <li><strong>Недавние модели</strong> — что вы недавно открывали в 3D-редакторе;</li>
+      <li><strong>Продолжить печать</strong> — активные элементы из очереди печати;</li>
+      <li><strong>Что нового</strong> — краткий список изменений.</li>
+    </ul>
+    <p>Включение/отключение: <strong>Настройки → Разное → Показывать стартовую страницу при запуске</strong>.</p>
+
+    <h2 id="step3">Шаг 3. Добавьте первые файлы</h2>
+    <ul>
+      <li>Кнопка <strong>+</strong> в верхней панели дерева — загрузить файл, папку или создать панель.</li>
+      <li>Перетащите файлы на дерево или на панель файлов.</li>
+      <li>Или используйте раздел <strong>Загрузки</strong> в дереве для импорта по URL.</li>
+    </ul>
+
+    <h2 id="step4">Шаг 4. Настройте материалы (по желанию)</h2>
+    <p>Откройте <strong>Материалы</strong> в нижней панели: добавьте типы (PLA, PETG…), производителей и цвета. Потом в правой панели «Детали файла» можно указать, чем печатать каждую модель.</p>
+
+    <h2 id="step5">Шаг 5. 3D-редакторы</h2>
+    <p>В <strong>Настройки → 3D-редакторы</strong> укажите путь к слайсеру (PrusaSlicer, Cura и т.д.). Тогда в контекстном меню файла появится «Открыть с помощью…».</p>
+
+    <h2>Что дальше</h2>
+    <div class="wiki-grid">
+      <a class="wiki-grid-card" href="interface.html"><strong>Интерфейс</strong><span>Разберитесь с панелями и деревом</span></a>
+      <a class="wiki-grid-card" href="files.html"><strong>Файлы</strong><span>Загрузка, панели, корзина</span></a>
+      <a class="wiki-grid-card" href="hotkeys.html"><strong>Горячие клавиши</strong><span>Ускорьте работу</span></a>
+    </div>
+  </main>
+</div>
+</body>
+</html>

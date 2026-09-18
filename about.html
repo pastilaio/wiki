@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>О программе — Pastila Wiki</title>
+  <link rel="stylesheet" href="../themes/Gray/light.css">
+  <link rel="stylesheet" href="css/wiki.css">
+</head>
+<body>
+<div class="wiki-layout">
+  <aside class="wiki-sidebar">
+    <div class="wiki-brand"><h1>Pastila</h1><p>Руководство пользователя</p></div>
+    <nav><ul class="wiki-nav">
+      <li class="wiki-nav-section">Начало</li>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="about.html" class="active">О программе</a></li>
+      <li><a href="getting-started.html">С чего начать</a></li>
+      <li class="wiki-nav-section">Работа</li>
+      <li><a href="interface.html">Интерфейс</a></li>
+      <li><a href="files.html">Файлы и папки</a></li>
+      <li><a href="hotkeys.html">Горячие клавиши</a></li>
+      <li><a href="search.html">Поиск</a></li>
+      <li><a href="materials.html">Материалы</a></li>
+      <li><a href="tags.html">Теги</a></li>
+      <li><a href="previews.html">Превью моделей</a></li>
+      <li><a href="print-queue.html">Очередь печати</a></li>
+      <li class="wiki-nav-section">Система</li>
+      <li><a href="settings.html">Настройки и резервные копии</a></li>
+    </ul></nav>
+  </aside>
+  <main class="wiki-main">
+    <h1>О программе</h1>
+    <p class="wiki-lead">Pastila — десктопное приложение (Electron) для организации библиотеки 3D-моделей и подготовки к печати. Текущий релиз: <strong>1.0.0</strong>.</p>
+
+    <h2>Установка</h2>
+    <p>Windows: установщик <code>Pastila-Setup-1.0.0.exe</code>. По умолчанию программа ставится в <code>%AppData%\Pastila</code>, язык и папка хранилища выбираются в мастере установки. Подробнее: <a href="getting-started.html">С чего начать</a>.</p>
+
+    <h2>Для кого</h2>
+    <p>Программа рассчитана на любителей и мастеров 3D-печати, у которых накапливается много STL, OBJ и 3MF файлов и нужен порядок: папки, метки, материалы, очередь на принтер.</p>
+
+    <h2>Что умеет Pastila</h2>
+    <ul>
+      <li><strong>Дерево проекта</strong> — папки, панели (вкладки с файлами), системные разделы (загрузки, корзина, очередь печати).</li>
+      <li><strong>Файловый менеджер</strong> — загрузка с диска, drag-and-drop, переименование, синхронизация с папкой на диске.</li>
+      <li><strong>Материалы</strong> — справочник типов, производителей, цветов; привязка к каждой модели.</li>
+      <li><strong>Теги</strong> — произвольные метки на файлах, поиск и фильтрация.</li>
+      <li><strong>Превью</strong> — автоматические миниатюры 3D-моделей и изображений.</li>
+      <li><strong>Очередь печати</strong> — виртуальные списки «что печатать», без копирования файлов.</li>
+      <li><strong>3D-просмотр</strong> — превью STL в правой панели, открытие во внешнем слайсере.</li>
+      <li><strong>Резервное копирование</strong> — архив всего хранилища одной кнопкой.</li>
+    </ul>
+
+    <h2>Как устроено хранилище</h2>
+    <p>Все данные лежат в выбранной вами <strong>папке проекта</strong>:</p>
+    <ul>
+      <li><code>structure.json</code> — дерево папок, ссылки, метаданные файлов;</li>
+      <li><code>materials.json</code> — справочник материалов;</li>
+      <li><code>files/</code> — сами модели и вложения;</li>
+      <li><code>previews/</code> — сгенерированные PNG-превью.</li>
+    </ul>
+
+    <div class="wiki-warning">
+      Удаление в корзину <strong>не стирает файл с диска</strong> сразу — он перемещается в раздел «Корзина» внутри программы. Окончательное удаление — через «Удалить навсегда» или очистку корзины.
+    </div>
+
+    <h2>Форматы файлов</h2>
+    <p>Поддерживаются модели <strong>STL, OBJ, 3MF</strong>, архивы ZIP (с опцией авто-распаковки), изображения для превью. Открытие в слайсере настраивается в разделе «3D-редакторы» в настройках.</p>
+  </main>
+</div>
+</body>
+</html>
